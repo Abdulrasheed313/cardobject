@@ -43,9 +43,9 @@ var getCard = document.getElementById('main');
 
 for (var i = 0; i < cars.length; i++) {
   getCard.innerHTML += `<div class="col-md-4">
-    <div class="card rounded-5 text-center p-3 mb-5 bg-secondary text-white"  display: inline-block; margin: 10px;">
+    <div class="card rounded-5 text-center p-3 mb-5 "  display: inline-block; margin: 10px;">
       <img src="${cars[i].img}" class="card-img-top" width="100%" height="200px" alt="Car Image">
-      <div class="card-body">
+      <div class="card-body bg-info text-dark">
       <h4 class="card-text">Price: ${cars[i].price}</h4>
         <h2 class="card-title">Brand: ${cars[i].make}</h2>
         <p class="card-text">Model: ${cars[i].model}</p>
